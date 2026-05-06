@@ -1,6 +1,6 @@
 # Mail Server — mattjack.cloud
 
-Self-hosted email on the mattjack.cloud VPS, providing `claude@mattjack.cloud`.
+Self-hosted email on the mattjack.cloud VPS, providing `jacko@mattjack.cloud`.
 
 ## Server
 
@@ -24,7 +24,7 @@ Self-hosted email on the mattjack.cloud VPS, providing `claude@mattjack.cloud`.
 
 | Address | Linux user | Maildir |
 |---|---|---|
-| claude@mattjack.cloud | claude | /home/claude/Maildir |
+| jacko@mattjack.cloud | jacko | /home/jacko/Maildir |
 | matt@mattjack.cloud | matt | /home/matt/Maildir |
 
 ## DNS Records
@@ -35,7 +35,7 @@ Self-hosted email on the mattjack.cloud VPS, providing `claude@mattjack.cloud`.
 | MX | @ | mail.mattjack.cloud (priority 10) |
 | TXT | @ | v=spf1 ip4:76.13.20.82 mx ~all |
 | TXT | mail._domainkey | v=DKIM1; h=sha256; k=rsa; p=... |
-| TXT | _dmarc | v=DMARC1; p=quarantine; rua=mailto:claude@mattjack.cloud |
+| TXT | _dmarc | v=DMARC1; p=quarantine; rua=mailto:jacko@mattjack.cloud |
 | PTR | 76.13.20.82 | mail.mattjack.cloud |
 
 ## Ports (UFW open)
@@ -55,7 +55,7 @@ Self-hosted email on the mattjack.cloud VPS, providing `claude@mattjack.cloud`.
 | IMAP port | 993 (SSL) |
 | SMTP server | mail.mattjack.cloud |
 | SMTP port | 587 (STARTTLS) |
-| Username | claude |
+| Username | jacko |
 
 ## Key File Locations
 
